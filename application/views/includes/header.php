@@ -15,7 +15,7 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand page-scroll" href="<?php echo base_url(); ?>">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="<?php echo base_url(); ?>">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,13 +28,13 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Menu <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                <a class="page-scroll" href=" '.base_url('site/logout').'"><i class="fa fa-btn fa-sign-out"></i> Logout</a>
+                                <a href="'.base_url('posts/create').'"><i class="fa fa-btn fa-pencil"></i> New Post</a>
                                 </li>
                                 <li>
                                 <a href="'.base_url('site/members_area').'"><i class="fa fa-btn fa-user"></i> My Profile</a>
                                 </li>
                                 <li>
-                                <a href="'.base_url('posts/create').'"><i class="fa fa-btn fa-pencil"></i> New Post</a>
+                                <a class="page-scroll" href=" '.base_url('site/logout').'"><i class="fa fa-btn fa-sign-out"></i> Logout</a>
                                 </li>
                             </ul>
                         </li>

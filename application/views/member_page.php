@@ -1,3 +1,18 @@
+<div class="container">  
+<div class="panel panel-default" id="login-form">
+<div class="panel-heading">
+	<p class="text-center">
+		Hello
+		<strong>
+		<?php echo $username; 
+		echo br();
+		?>
+		</strong>
+	</p>
+
+</div>
+
+<div class="panel-body">
 <?php
 
 foreach($data_user as $user){
@@ -17,62 +32,52 @@ else{
 
 ?>
 
-<div class="center-block">
-<!-- Upload section -->
-<?php 
-if (isset($error)) {
-echo $error;
-}?>
 
-<?php echo form_open_multipart('site/do_upload');?>
-<p class="text-center">
-<input type="file" name="userfile" size="20" />
-</p>
-<input type="submit" value="upload" />
+			<!-- Upload section -->
+			<?php 
+			if (isset($error)) {
+			echo $error;
+			}?>
 
-</form>
+			<?php echo form_open_multipart('site/do_upload');?>
+			<p class="text-center">
+			<input type="file" name="userfile" size="20" />
+			</p>
+			<input type="submit" value="upload" />
+
+			</form>
 
 
+			
 
+
+			<div class="row">
+			<div class="col-xs-4">
+			FirstName
+			</div>
+			<div class="col-xs-4">
+			<?php echo $FirstName;?>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="col-xs-4">
+			LastName	
+			</div>
+			<div class="col-xs-4">
+			<?php echo $LastName;?>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="col-xs-4">
+			Email	
+			</div>
+			<div class="col-xs-4">
+			<?php echo $Email;?>
+			</div>
+			</div>
 
 </div>
-
-
-<p class="text-center">
-Hello
-<strong>
-<?php echo $username; 
-echo br();
-?>
-</strong>
-</p>
-
-
-<div class="row">
-<div class="col-xs-4">
-FirstName
-</div>
-<div class="col-xs-4">
-<?php echo $FirstName;?>
 </div>
 </div>
-
-<div class="row">
-<div class="col-xs-4">
-LastName	
-</div>
-<div class="col-xs-4">
-<?php echo $LastName;?>
-</div>
-</div>
-
-<div class="row">
-<div class="col-xs-4">
-Email	
-</div>
-<div class="col-xs-4">
-<?php echo $Email;?>
-</div>
-</div>
-
-
