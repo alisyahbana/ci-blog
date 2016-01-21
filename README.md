@@ -1,2 +1,2 @@
 # ci-login
-codeigniter simple login form
+codeigniter simple blog
